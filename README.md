@@ -20,7 +20,7 @@ Google Colab already includes all the required libraries, so you can simply open
 If you prefer to run the code on your own machine, install the dependencies using pip:
 
 ```sh
-pip install -r [requirements.txt](http://_vscodecontentref_/0)
+pip install -r requirements.txt
 ```
 
 
