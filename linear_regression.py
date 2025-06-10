@@ -47,7 +47,8 @@ plt.show()
 def predict_price():
     try:
         size = float(input("\nEnter house size in square feet: "))
-        price_pred = model.predict([[size]])[0]
+        size_df = pd.DataFrame([[size]], columns=['Size (sqft)'])
+        price_pred = model.predict(size_df)[0]
         print(f"Predicted house price: ${price_pred:,.2f}")
     except ValueError:
         print("Invalid input. Please enter a numeric value.")
